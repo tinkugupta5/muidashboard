@@ -1,5 +1,5 @@
 import './App.css';
-import Sidenav from './Sidenav';
+import Sidenav from './components/Sidenav';
 import {Routes,Route,BrowserRouter} from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';

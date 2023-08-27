@@ -1,12 +1,15 @@
 import React from 'react'
-import Sidenav from '../Sidenav'
+import Sidenav from '../components/Sidenav'
 import { Box } from '@mui/material'
 import Typography from '@mui/material/Typography';
+import Navbar from '../components/Navbar'
+
 // import DrawerHeader from '@mui/material/DrawerHeader';
 
 const Home = () => {
   return (
     <>
+    {/* <Navbar/> */}
     <Box sx={{ display: 'flex' }}>
     <Sidenav/>
     
