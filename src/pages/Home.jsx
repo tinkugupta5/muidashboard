@@ -9,7 +9,8 @@ import Navbar from '../components/Navbar'
 const Home = () => {
   return (
     <>
-    {/* <Navbar/> */}
+    <Navbar/>
+    <Box height={30}/>
     <Box sx={{ display: 'flex' }}>
     <Sidenav/>
     

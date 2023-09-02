@@ -3,10 +3,13 @@ import Sidenav from '../components/Sidenav'
 import { Box } from '@mui/material'
 import Typography from '@mui/material/Typography';
 // import DrawerHeader from '@mui/material/DrawerHeader';
+import Navbar from '../components/Navbar'
 
 const About = () => {
   return (
     <>
+    <Navbar/>
+    <Box height={30}/>
       <Box sx={{ display: 'flex' }}>
         <Sidenav />
 
