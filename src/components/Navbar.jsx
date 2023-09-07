@@ -17,6 +17,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { useAppStore } from '../appStore';
+import DarkMode from './DarkMode';
 
 
 const AppBar = styled(MuiAppBar, {
@@ -190,6 +191,7 @@ export default function Navbar() {
           >
             MUI
           </Typography>
+          <DarkMode/>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
