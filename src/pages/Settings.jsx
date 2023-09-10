@@ -9,7 +9,7 @@ const Settings = () => {
   return (
     <>
     <Navbar/>
-    <Box height={30}/>
+    <Box height={40}/>
       <Box sx={{ display: 'flex' }}>
         <Sidenav />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
