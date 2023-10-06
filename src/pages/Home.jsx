@@ -10,6 +10,10 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import '../Dash.css'
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 // import DrawerHeader from '@mui/material/DrawerHeader';
 const Item = styled(Paper)(({ theme }) => ({
@@ -20,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-// 21 runiing
+// 25 runiing
 
 const Home = () => {
   return (
@@ -31,34 +35,41 @@ const Home = () => {
     <Sidenav/>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
 
-
         <Grid container spacing={2}>
           <Grid item xs={8}>
 
+            {/* left side  */}
+
           <Stack spacing={2} direction="row">
-            <Card sx={{ maxWidth: 49 + "%",height:140 }}>
+            <Card sx={{ minWidth: 49 + "%",height:150 }} className='gradient'>
           
               <CardContent>
+                <div>
+                <CreditCardIcon/>
+                </div>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  $500.00
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
+                <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
+                Total Order
                 </Typography>
+               
               </CardContent>
           
             </Card> 
-            <Card sx={{ maxWidth: 49 + "%",height:140 }}>
+            <Card sx={{ minWidth: 49 + "%",height:150 }} className='gradient1'>
           
               <CardContent>
+              <div>
+                <ShoppingBagIcon/>
+                </div>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                $500.00
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
+                <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
+                Total Earnings
                 </Typography>
+                
               </CardContent>
           
             </Card> 
@@ -67,19 +78,34 @@ const Home = () => {
           </Grid>
           <Grid item xs={4}>
           <Stack spacing={2}>
-          <Card sx={{ maxWidth: 345 }}>          
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>            
-            </CardContent>     
+            {/* right card overlapped */}
+          <Card sx={{ maxWidth: 345 }} className='gradientlight'>          
+          
+          <Stack spacing={2} direction="row">
+            <div className='iconstyle' >
+            <StorefrontIcon/>
+            </div>
+            <div className='paddingall'>
+            <span className='pricetitle'>$234k </span>
+            <br/>
+             <span className='pricesubtitle'>Total Income</span> 
+            </div> 
+            </Stack>                  
+               
            </Card> 
           <Card sx={{ maxWidth: 345 }}>          
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>            
-            </CardContent>     
+          
+          <Stack spacing={2} direction="row">
+            <div className='iconstyle'>
+            <StorefrontIcon/>
+            </div>
+            <div className='paddingall'>
+            <span className='pricetitle'>$234k </span>
+            <br/>
+             <span className='pricesubtitle'>Total Income</span> 
+            </div> 
+            </Stack>             
+                 
            </Card> 
           </Stack>
           </Grid>      
@@ -90,7 +116,7 @@ const Home = () => {
           <Grid item xs={8}>
           <Card sx={{ height:60 + 'vh' }}>          
             <CardContent>
-                          
+                       
               </CardContent>     
            </Card>
           </Grid>
