@@ -16,7 +16,6 @@ import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import AccordionDash from '../components/AccordionDash'
 import BarChart from '../charts/BarChart';
-import CountUp from 'react-countup';
 
 // import DrawerHeader from '@mui/material/DrawerHeader';
 const Item = styled(Paper)(({ theme }) => ({
@@ -29,10 +28,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
 // 25 runiing
 
-const Home = () => {
+const Analytics = () => {
   return (
     <>
-    <div className='bgcolor'>
     <Navbar/>
     <Box height={70}/>
     <Box sx={{ display: 'flex' }}>
@@ -40,51 +38,53 @@ const Home = () => {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
 
         <Grid container spacing={2}>
-          <Grid item xs={8}>
 
-            {/* left side  */}
+        <Grid item xs={8}>
 
-          <Stack spacing={2} direction="row">
-            <Card sx={{ minWidth: 49 + "%",height:150 }} className='gradient'>
-          
-              <CardContent>
-                <div>
-                <CreditCardIcon/>
-                </div>
-                <Typography gutterBottom variant="h5" component="div">
-                  $<CountUp delay={0.2} end={500} duration={0.3}  />
-                  
-                </Typography>
-                <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
-                Total Order
-                </Typography>
-               
-              </CardContent>
-          
-            </Card> 
-            <Card sx={{ minWidth: 49 + "%",height:150 }} className='gradient1'>
-          
-              <CardContent>
-              <div>
-                <ShoppingBagIcon/>
-                </div>
-                <Typography gutterBottom variant="h5" component="div">
-                $<CountUp delay={0.2} end={900} duration={0.3}  />
-                </Typography>
-                <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
-                Total Earnings
-                </Typography>
-                
-              </CardContent>
-          
-            </Card> 
-          </Stack>
+{/* left side  */}
 
-          </Grid>
+<Stack spacing={2} direction="row">
+<Card sx={{ minWidth: 49 + "%",height:150 }} className='gradient'>
+
+  <CardContent>
+    <div>
+    <CreditCardIcon/>
+    </div>
+    <Typography gutterBottom variant="h5" component="div">
+      $500.00
+    </Typography>
+    <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
+    Total Order
+    </Typography>
+   
+  </CardContent>
+
+</Card> 
+<Card sx={{ minWidth: 49 + "%",height:150 }} className='gradient1'>
+
+  <CardContent>
+  <div>
+    <ShoppingBagIcon/>
+    </div>
+    <Typography gutterBottom variant="h5" component="div">
+    $500.00
+    </Typography>
+    <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
+    Total Earnings
+    </Typography>
+    
+  </CardContent>
+
+</Card> 
+</Stack>
+
+</Grid>
+            {/* right small cards  */}
           <Grid item xs={4}>
           <Stack spacing={2}>
             {/* right card overlapped */}
-          <Card sx={{ minWidth: 355 }} className='gradientlight'>          
+            
+          <Card sx={{ minWidth: 155 }} className='gradientlight'>          
           
           <Stack spacing={2} direction="row">
             <div className='iconstyle' >
@@ -97,24 +97,15 @@ const Home = () => {
              <span className='pricesubtitle'>Total Income</span> 
             </div> 
             </Stack>                  
+                         
                
            </Card> 
-          <Card sx={{ minWidth: 355 }}>          
           
-          <Stack spacing={2} direction="row">
-            <div className='iconstyle'>
-            <StorefrontIcon/>
-            </div>
-            <div className='paddingall'>
-            <span className='pricetitle'>$234k </span>
-            <br/>
-             <span className='pricesubtitle'>Total Income</span> 
-            </div> 
-            </Stack>             
-                 
-           </Card> 
           </Stack>
-          </Grid>      
+          </Grid> 
+            {/* cards left  */}
+         
+               
         </Grid>
 
         <Box height={30}/>
@@ -138,13 +129,10 @@ const Home = () => {
         </Grid> 
       </Box>
     </Box>
-
-    </div>
-    
-    
+    A 
     </>
     
   );
 }
 
-export default Home
+export default Analytics
