@@ -74,6 +74,22 @@ export default function ProductList() {
                   Name
                   {/* {column.label} */}
                 </TableCell>
+                <TableCell
+                  
+                 align='left'
+                  style={{ minWidth: "100px"}}
+                >
+                  Price
+                  {/* {column.label} */}
+                </TableCell>
+                <TableCell
+                  
+                 align='left'
+                  style={{ minWidth: "100px"}}
+                >
+                  Category
+                  {/* {column.label} */}
+                </TableCell>
               
             </TableRow>
           </TableHead>
